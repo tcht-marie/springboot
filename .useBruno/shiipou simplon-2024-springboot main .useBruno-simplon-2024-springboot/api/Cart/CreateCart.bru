@@ -1,0 +1,18 @@
+meta {
+  name: CreateCart
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/cart/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "user": 3,
+    "product": 1
+  }
+}

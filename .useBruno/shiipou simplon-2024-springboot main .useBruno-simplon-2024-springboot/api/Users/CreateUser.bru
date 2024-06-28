@@ -1,0 +1,28 @@
+meta {
+  name: CreateUser
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/api/users/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "Soumaya",
+    "name": "Soumaya",
+    "email": "soumaya@maif.fr",
+    "carts": null
+  }
+}
+
+body:form-urlencoded {
+  username: shiipou
+}
+
+body:multipart-form {
+  username: shiipou
+}

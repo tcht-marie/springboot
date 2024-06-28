@@ -1,0 +1,18 @@
+meta {
+  name: UpdateCart
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/api/cart/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "cart": 1,
+    "product": 4
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: register
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/register
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  username: 
+  password: test
+  passwordConfirm: test
+  email: coralie@maif.fr
+}

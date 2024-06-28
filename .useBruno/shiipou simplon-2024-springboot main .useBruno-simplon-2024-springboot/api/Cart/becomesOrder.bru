@@ -1,0 +1,17 @@
+meta {
+  name: becomesOrder
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/api/cart/2/order
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "cart": 1
+  }
+}
